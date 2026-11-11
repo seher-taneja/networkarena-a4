@@ -1,0 +1,18 @@
+# A landslide in the north pass of sector 0, from 3 s to 7 s: the
+# crossings of AS 1 (switches 11-12) and AS 2 (switches 21-22) both fail.
+# Run with --failures to test your failover; put your program in AS 1 or 2.
+[schedule]
+world = "practice"
+seed = 0
+recovery_budget_ms = 1000
+duration_ms = 10000
+
+[[failure]]
+link = [11, 12]
+down_ms = 3000
+up_ms = 7000
+
+[[failure]]
+link = [21, 22]
+down_ms = 3000
+up_ms = 7000

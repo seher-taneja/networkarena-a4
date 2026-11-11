@@ -1,0 +1,240 @@
+{
+  "provisional": true,
+  "note": "Provisional: these numbers may change until the game opens on Monday Nov 9, 18:00; after that, only under the rule book's unplayable-number rule. The current copy is on the website.",
+  "world": {
+    "worlds": 4,
+    "ixps": 8,
+    "ases_per_sector": 4,
+    "ases_per_world": 32,
+    "ai_seats": 4,
+    "possible_neighbours": 11
+  },
+  "schedule": {
+    "timezone": "America/Chicago",
+    "game_opens": "2026-11-09T18:00",
+    "round_cutoffs": [
+      "2026-11-10T20:00",
+      "2026-11-12T10:00",
+      "2026-11-17T10:00",
+      "2026-11-19T10:00",
+      "2026-11-30T10:00",
+      "2026-12-02T10:00",
+      "2026-12-04T10:00",
+      "2026-12-07T10:00",
+      "2026-12-09T10:00"
+    ],
+    "results_by": "18:00 the day of the cutoff (Round 1: by midnight)",
+    "auctions_close": [
+      "2026-11-11T20:00",
+      "2026-11-18T20:00",
+      "2026-12-03T20:00"
+    ],
+    "final_report_due": "2026-12-11T23:59"
+  },
+  "classes": [
+    {
+      "id": 1,
+      "name": "Web",
+      "target_ms": 200,
+      "home_price_per_mb": 1,
+      "company": "Amazon",
+      "company_contract_per_sector": 200
+    },
+    {
+      "id": 2,
+      "name": "Video",
+      "target_ms": 400,
+      "home_price_per_mb": 1,
+      "company": "Netflix",
+      "company_contract_per_sector": 600
+    },
+    {
+      "id": 3,
+      "name": "Calls",
+      "target_ms": 80,
+      "home_price_per_mb": 35,
+      "company": "Zoom",
+      "company_contract_per_sector": 1600
+    },
+    {
+      "id": 4,
+      "name": "Trading",
+      "target_ms": 30,
+      "home_price_per_mb": 0,
+      "company": "Jane Street",
+      "company_contract_per_sector": 800
+    }
+  ],
+  "traffic": {
+    "note": "Average rates per AS in real Mb/s, in a graded world (8 IXPs). Packets are 1000 bytes and arrive at random around these averages; each round draws its own packets. The practice world files list every source's rate (at their mb_scale): full.toml is the full ring; practice.toml's smaller ring has one far sector, not five.",
+    "company": {
+      "Web": 6,
+      "Video": 21,
+      "Calls": 1.5,
+      "Trading": 1.4
+    },
+    "company_note": "What each company's site through your AS sends (a quarter of the company's traffic in your sector). Web, Video and Calls go to every home in your sector (all four ASes, both towns, equally), and Calls gets as much back from those homes. Trading goes to Jane Street's sites through every AS outside your sector, equally, and as much comes back. Your q for a company counts every packet to or from its site through your AS.",
+    "homes_to_other_sectors": {
+      "Web": 18,
+      "Video": 42
+    },
+    "homes_to_other_sectors_note": "What your homes send to homes in other sectors, half from each town: half to the two neighbouring sectors and half to the five far ones, equally to each home within each half. As much comes back.",
+    "external": {
+      "Web": 9,
+      "Video": 21
+    },
+    "external_note": "From content reached only through the Tier-1 to your homes, half to each town."
+  },
+  "tier1_fee_per_mb": 1.5,
+  "tier1_fee_applies_to": "every Mb on your Tier-1 links, in each direction",
+  "meter_epoch_s": 5.0,
+  "credits": {
+    "at_open": 100,
+    "per_monday": 100,
+    "carry_max": 200
+  },
+  "agreements": {
+    "max_term_rounds": 3
+  },
+  "network": {
+    "crossing": {
+      "capacity_mbps": 100,
+      "latency_ms": 10
+    },
+    "tier1_link": {
+      "capacity_mbps": 40,
+      "latency_ms": 32
+    },
+    "ixp_port": {
+      "capacity_mbps": 200,
+      "latency_ms": 1
+    },
+    "hub_to_access": {
+      "capacity_mbps": 1000,
+      "latency_ms": 6
+    }
+  },
+  "network_note": "Real rates. The practice world runs at mb_scale of them (its [a4] section), and money is computed on real Mb.",
+  "buffer_bytes_per_port": 12500,
+  "switch_program": {
+    "fuel_per_call": 400000000,
+    "memory_bytes": 134217728,
+    "max_output_bytes": 1048576,
+    "max_table_entries": 65536,
+    "max_wasm_bytes": 2097152,
+    "inject_bytes_per_s": 10000
+  },
+  "switch_program_note": "inject_bytes_per_s: what each switch may send itself (hellos, probes) per second, with a one-second burst; the excess is dropped and shows in the replay. Such packets use capacity but are never metered or billed.",
+  "policy_program": {
+    "fuel_per_call": 10000000,
+    "memory_bytes": 33554432,
+    "max_iterations": 32
+  },
+  "settlement_program": {
+    "fuel": 50000000,
+    "memory_bytes": 33554432,
+    "max_wasm_bytes": 1048576
+  },
+  "hardware": {
+    "second_cable": {
+      "capacity_mbps": 100
+    },
+    "cross_ring": {
+      "ordinary": {
+        "capacity_mbps": 100,
+        "latency_ms": 22
+      },
+      "microwave": {
+        "capacity_mbps": 50,
+        "latency_ms": 12
+      },
+      "far_port_mbps": 200
+    },
+    "private_interconnect": {
+      "capacity_mbps": 200
+    },
+    "upgrades": {
+      "link_capacity_mbps": 100,
+      "buffer_bytes_per_port": 12500,
+      "port_mbps": 200,
+      "program_memory_bytes": 134217728
+    },
+    "repair_crew": {
+      "outage_factor": 0.5
+    }
+  },
+  "auctions": {
+    "min_raise": 0.1,
+    "extension_minutes": 10,
+    "lots": [
+      {
+        "auction": 1,
+        "key": "cross_ring.microwave",
+        "name": "Link across the ring, microwave",
+        "units_per_world": 1,
+        "reserve_cr": 25,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "cross_ring.ordinary",
+        "name": "Link across the ring, ordinary",
+        "units_per_world": 1,
+        "reserve_cr": 20,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "second_cable",
+        "name": "Second cable",
+        "units_per_world": 4,
+        "reserve_cr": 10,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "repair_crew",
+        "name": "Repair crew",
+        "units_per_world": 4,
+        "reserve_cr": 8,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "private_interconnect",
+        "name": "Private interconnect",
+        "units_per_world": 4,
+        "reserve_cr": 3,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "upgrades.buffer",
+        "name": "Upgrade: buffer",
+        "units_per_world": 4,
+        "reserve_cr": 5,
+        "max_per_team": 1
+      },
+      {
+        "auction": 1,
+        "key": "upgrades.program_memory",
+        "name": "Upgrade: program memory",
+        "units_per_world": 4,
+        "reserve_cr": 3,
+        "max_per_team": 1
+      }
+    ]
+  },
+  "scoring": {
+    "rounds_counted": 9,
+    "worlds": 4,
+    "score_clamp": [
+      -100,
+      200
+    ],
+    "grade_weights": {
+      "season_score": 0.75,
+      "final_report": 0.25
+    }
+  }
+}

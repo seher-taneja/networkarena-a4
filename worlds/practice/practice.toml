@@ -1,0 +1,3648 @@
+[world]
+name = "practice"
+seed = 0
+version = 1
+family = "a4"
+
+[params]
+link_capacity_mbps = 10000
+link_latency_us = 100
+queue_capacity_bytes = 12500
+warmup_ms = 500
+duration_ms = 10000
+
+[workload]
+kind = "a4"
+size_bytes = 1000
+
+[[switch]]
+id = 11
+as_id = 1
+
+[[switch]]
+id = 12
+as_id = 1
+
+[[switch]]
+id = 13
+as_id = 1
+
+[[switch]]
+id = 14
+as_id = 1
+
+[[switch]]
+id = 21
+as_id = 2
+
+[[switch]]
+id = 22
+as_id = 2
+
+[[switch]]
+id = 23
+as_id = 2
+
+[[switch]]
+id = 24
+as_id = 2
+
+[[switch]]
+id = 31
+as_id = 3
+
+[[switch]]
+id = 32
+as_id = 3
+
+[[switch]]
+id = 33
+as_id = 3
+
+[[switch]]
+id = 34
+as_id = 3
+
+[[switch]]
+id = 41
+as_id = 4
+
+[[switch]]
+id = 42
+as_id = 4
+
+[[switch]]
+id = 43
+as_id = 4
+
+[[switch]]
+id = 44
+as_id = 4
+
+[[switch]]
+id = 51
+as_id = 5
+
+[[switch]]
+id = 52
+as_id = 5
+
+[[switch]]
+id = 53
+as_id = 5
+
+[[switch]]
+id = 54
+as_id = 5
+
+[[switch]]
+id = 61
+as_id = 6
+
+[[switch]]
+id = 62
+as_id = 6
+
+[[switch]]
+id = 63
+as_id = 6
+
+[[switch]]
+id = 64
+as_id = 6
+
+[[switch]]
+id = 71
+as_id = 7
+
+[[switch]]
+id = 72
+as_id = 7
+
+[[switch]]
+id = 73
+as_id = 7
+
+[[switch]]
+id = 74
+as_id = 7
+
+[[switch]]
+id = 81
+as_id = 8
+
+[[switch]]
+id = 82
+as_id = 8
+
+[[switch]]
+id = 83
+as_id = 8
+
+[[switch]]
+id = 84
+as_id = 8
+
+[[switch]]
+id = 91
+as_id = 9
+
+[[switch]]
+id = 92
+as_id = 9
+
+[[switch]]
+id = 93
+as_id = 9
+
+[[switch]]
+id = 94
+as_id = 9
+
+[[switch]]
+id = 101
+as_id = 10
+
+[[switch]]
+id = 102
+as_id = 10
+
+[[switch]]
+id = 103
+as_id = 10
+
+[[switch]]
+id = 104
+as_id = 10
+
+[[switch]]
+id = 111
+as_id = 11
+
+[[switch]]
+id = 112
+as_id = 11
+
+[[switch]]
+id = 113
+as_id = 11
+
+[[switch]]
+id = 114
+as_id = 11
+
+[[switch]]
+id = 121
+as_id = 12
+
+[[switch]]
+id = 122
+as_id = 12
+
+[[switch]]
+id = 123
+as_id = 12
+
+[[switch]]
+id = 124
+as_id = 12
+
+[[switch]]
+id = 131
+as_id = 13
+
+[[switch]]
+id = 132
+as_id = 13
+
+[[switch]]
+id = 133
+as_id = 13
+
+[[switch]]
+id = 134
+as_id = 13
+
+[[switch]]
+id = 141
+as_id = 14
+
+[[switch]]
+id = 142
+as_id = 14
+
+[[switch]]
+id = 143
+as_id = 14
+
+[[switch]]
+id = 144
+as_id = 14
+
+[[switch]]
+id = 151
+as_id = 15
+
+[[switch]]
+id = 152
+as_id = 15
+
+[[switch]]
+id = 153
+as_id = 15
+
+[[switch]]
+id = 154
+as_id = 15
+
+[[switch]]
+id = 161
+as_id = 16
+
+[[switch]]
+id = 162
+as_id = 16
+
+[[switch]]
+id = 163
+as_id = 16
+
+[[switch]]
+id = 164
+as_id = 16
+
+[[switch]]
+id = 1000
+as_id = 100
+
+[[link]]
+a = 11
+b = 13
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 12
+b = 14
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 11
+b = 12
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 11
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 12
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 21
+b = 23
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 22
+b = 24
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 21
+b = 22
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 21
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 22
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 31
+b = 33
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 32
+b = 34
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 31
+b = 32
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 31
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 32
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 41
+b = 43
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 42
+b = 44
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 41
+b = 42
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 41
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 42
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 51
+b = 53
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 52
+b = 54
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 51
+b = 52
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 51
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 52
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 61
+b = 63
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 62
+b = 64
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 61
+b = 62
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 61
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 62
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 71
+b = 73
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 72
+b = 74
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 71
+b = 72
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 71
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 72
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 81
+b = 83
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 82
+b = 84
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 81
+b = 82
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 81
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 82
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 91
+b = 93
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 92
+b = 94
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 91
+b = 92
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 91
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 92
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 101
+b = 103
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 102
+b = 104
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 101
+b = 102
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 101
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 102
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 111
+b = 113
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 112
+b = 114
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 111
+b = 112
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 111
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 112
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 121
+b = 123
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 122
+b = 124
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 121
+b = 122
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 121
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 122
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 131
+b = 133
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 132
+b = 134
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 131
+b = 132
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 131
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 132
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 141
+b = 143
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 142
+b = 144
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 141
+b = 142
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 141
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 142
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 151
+b = 153
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 152
+b = 154
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 151
+b = 152
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 151
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 152
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 161
+b = 163
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 162
+b = 164
+capacity_mbps = 100
+latency_us = 6000
+
+[[link]]
+a = 161
+b = 162
+capacity_mbps = 10
+latency_us = 10000
+
+[[link]]
+a = 161
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 162
+b = 1000
+capacity_mbps = 4
+latency_us = 32000
+
+[[link]]
+a = 11
+b = 21
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 22
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 31
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 32
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 41
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 42
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 51
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 61
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 12
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 132
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 142
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 11
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 31
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 32
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 41
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 42
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 51
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 61
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 22
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 132
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 142
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 21
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 31
+b = 41
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 32
+b = 42
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 32
+b = 51
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 32
+b = 61
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 32
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 32
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 31
+b = 132
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 31
+b = 142
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 31
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 31
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 42
+b = 51
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 42
+b = 61
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 42
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 42
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 41
+b = 132
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 41
+b = 142
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 41
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 41
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 51
+b = 61
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 62
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 51
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 72
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 51
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 82
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 91
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 101
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 52
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 61
+b = 71
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 72
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 61
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 82
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 91
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 101
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 62
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 71
+b = 81
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 72
+b = 82
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 72
+b = 91
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 72
+b = 101
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 72
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 72
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 82
+b = 91
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 82
+b = 101
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 82
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 82
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 91
+b = 101
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 102
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 91
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 112
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 91
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 122
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 131
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 141
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 92
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 101
+b = 111
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 112
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 101
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 122
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 131
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 141
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 102
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 111
+b = 121
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 112
+b = 122
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 112
+b = 131
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 112
+b = 141
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 112
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 112
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 122
+b = 131
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 122
+b = 141
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 122
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 122
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 132
+b = 142
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 131
+b = 141
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 132
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 131
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 132
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 131
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 142
+b = 152
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 141
+b = 151
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 142
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 141
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 152
+b = 162
+capacity_mbps = 20
+latency_us = 1000
+
+[[link]]
+a = 151
+b = 161
+capacity_mbps = 20
+latency_us = 1000
+
+[[app]]
+id = 1
+switch = 13
+prefix = "10.1.1.0/24"
+
+[[app]]
+id = 2
+switch = 13
+prefix = "10.1.2.0/24"
+
+[[app]]
+id = 3
+switch = 13
+prefix = "10.1.3.0/24"
+
+[[app]]
+id = 4
+switch = 14
+prefix = "10.1.129.0/24"
+
+[[app]]
+id = 5
+switch = 14
+prefix = "10.1.130.0/24"
+
+[[app]]
+id = 6
+switch = 14
+prefix = "10.1.131.0/24"
+
+[[app]]
+id = 7
+switch = 13
+prefix = "10.1.17.0/24"
+
+[[app]]
+id = 8
+switch = 13
+prefix = "10.1.18.0/24"
+
+[[app]]
+id = 9
+switch = 13
+prefix = "10.1.19.0/24"
+
+[[app]]
+id = 10
+switch = 11
+prefix = "10.1.32.0/24"
+
+[[app]]
+id = 11
+switch = 23
+prefix = "10.2.1.0/24"
+
+[[app]]
+id = 12
+switch = 23
+prefix = "10.2.2.0/24"
+
+[[app]]
+id = 13
+switch = 23
+prefix = "10.2.3.0/24"
+
+[[app]]
+id = 14
+switch = 24
+prefix = "10.2.129.0/24"
+
+[[app]]
+id = 15
+switch = 24
+prefix = "10.2.130.0/24"
+
+[[app]]
+id = 16
+switch = 24
+prefix = "10.2.131.0/24"
+
+[[app]]
+id = 17
+switch = 23
+prefix = "10.2.17.0/24"
+
+[[app]]
+id = 18
+switch = 23
+prefix = "10.2.18.0/24"
+
+[[app]]
+id = 19
+switch = 23
+prefix = "10.2.19.0/24"
+
+[[app]]
+id = 20
+switch = 21
+prefix = "10.2.32.0/24"
+
+[[app]]
+id = 21
+switch = 33
+prefix = "10.3.1.0/24"
+
+[[app]]
+id = 22
+switch = 33
+prefix = "10.3.2.0/24"
+
+[[app]]
+id = 23
+switch = 33
+prefix = "10.3.3.0/24"
+
+[[app]]
+id = 24
+switch = 34
+prefix = "10.3.129.0/24"
+
+[[app]]
+id = 25
+switch = 34
+prefix = "10.3.130.0/24"
+
+[[app]]
+id = 26
+switch = 34
+prefix = "10.3.131.0/24"
+
+[[app]]
+id = 27
+switch = 33
+prefix = "10.3.17.0/24"
+
+[[app]]
+id = 28
+switch = 33
+prefix = "10.3.18.0/24"
+
+[[app]]
+id = 29
+switch = 33
+prefix = "10.3.19.0/24"
+
+[[app]]
+id = 30
+switch = 31
+prefix = "10.3.32.0/24"
+
+[[app]]
+id = 31
+switch = 43
+prefix = "10.4.1.0/24"
+
+[[app]]
+id = 32
+switch = 43
+prefix = "10.4.2.0/24"
+
+[[app]]
+id = 33
+switch = 43
+prefix = "10.4.3.0/24"
+
+[[app]]
+id = 34
+switch = 44
+prefix = "10.4.129.0/24"
+
+[[app]]
+id = 35
+switch = 44
+prefix = "10.4.130.0/24"
+
+[[app]]
+id = 36
+switch = 44
+prefix = "10.4.131.0/24"
+
+[[app]]
+id = 37
+switch = 43
+prefix = "10.4.17.0/24"
+
+[[app]]
+id = 38
+switch = 43
+prefix = "10.4.18.0/24"
+
+[[app]]
+id = 39
+switch = 43
+prefix = "10.4.19.0/24"
+
+[[app]]
+id = 40
+switch = 41
+prefix = "10.4.32.0/24"
+
+[[app]]
+id = 41
+switch = 53
+prefix = "10.5.1.0/24"
+
+[[app]]
+id = 42
+switch = 53
+prefix = "10.5.2.0/24"
+
+[[app]]
+id = 43
+switch = 53
+prefix = "10.5.3.0/24"
+
+[[app]]
+id = 44
+switch = 54
+prefix = "10.5.129.0/24"
+
+[[app]]
+id = 45
+switch = 54
+prefix = "10.5.130.0/24"
+
+[[app]]
+id = 46
+switch = 54
+prefix = "10.5.131.0/24"
+
+[[app]]
+id = 47
+switch = 53
+prefix = "10.5.17.0/24"
+
+[[app]]
+id = 48
+switch = 53
+prefix = "10.5.18.0/24"
+
+[[app]]
+id = 49
+switch = 53
+prefix = "10.5.19.0/24"
+
+[[app]]
+id = 50
+switch = 51
+prefix = "10.5.32.0/24"
+
+[[app]]
+id = 51
+switch = 63
+prefix = "10.6.1.0/24"
+
+[[app]]
+id = 52
+switch = 63
+prefix = "10.6.2.0/24"
+
+[[app]]
+id = 53
+switch = 63
+prefix = "10.6.3.0/24"
+
+[[app]]
+id = 54
+switch = 64
+prefix = "10.6.129.0/24"
+
+[[app]]
+id = 55
+switch = 64
+prefix = "10.6.130.0/24"
+
+[[app]]
+id = 56
+switch = 64
+prefix = "10.6.131.0/24"
+
+[[app]]
+id = 57
+switch = 63
+prefix = "10.6.17.0/24"
+
+[[app]]
+id = 58
+switch = 63
+prefix = "10.6.18.0/24"
+
+[[app]]
+id = 59
+switch = 63
+prefix = "10.6.19.0/24"
+
+[[app]]
+id = 60
+switch = 61
+prefix = "10.6.32.0/24"
+
+[[app]]
+id = 61
+switch = 73
+prefix = "10.7.1.0/24"
+
+[[app]]
+id = 62
+switch = 73
+prefix = "10.7.2.0/24"
+
+[[app]]
+id = 63
+switch = 73
+prefix = "10.7.3.0/24"
+
+[[app]]
+id = 64
+switch = 74
+prefix = "10.7.129.0/24"
+
+[[app]]
+id = 65
+switch = 74
+prefix = "10.7.130.0/24"
+
+[[app]]
+id = 66
+switch = 74
+prefix = "10.7.131.0/24"
+
+[[app]]
+id = 67
+switch = 73
+prefix = "10.7.17.0/24"
+
+[[app]]
+id = 68
+switch = 73
+prefix = "10.7.18.0/24"
+
+[[app]]
+id = 69
+switch = 73
+prefix = "10.7.19.0/24"
+
+[[app]]
+id = 70
+switch = 71
+prefix = "10.7.32.0/24"
+
+[[app]]
+id = 71
+switch = 83
+prefix = "10.8.1.0/24"
+
+[[app]]
+id = 72
+switch = 83
+prefix = "10.8.2.0/24"
+
+[[app]]
+id = 73
+switch = 83
+prefix = "10.8.3.0/24"
+
+[[app]]
+id = 74
+switch = 84
+prefix = "10.8.129.0/24"
+
+[[app]]
+id = 75
+switch = 84
+prefix = "10.8.130.0/24"
+
+[[app]]
+id = 76
+switch = 84
+prefix = "10.8.131.0/24"
+
+[[app]]
+id = 77
+switch = 83
+prefix = "10.8.17.0/24"
+
+[[app]]
+id = 78
+switch = 83
+prefix = "10.8.18.0/24"
+
+[[app]]
+id = 79
+switch = 83
+prefix = "10.8.19.0/24"
+
+[[app]]
+id = 80
+switch = 81
+prefix = "10.8.32.0/24"
+
+[[app]]
+id = 81
+switch = 93
+prefix = "10.9.1.0/24"
+
+[[app]]
+id = 82
+switch = 93
+prefix = "10.9.2.0/24"
+
+[[app]]
+id = 83
+switch = 93
+prefix = "10.9.3.0/24"
+
+[[app]]
+id = 84
+switch = 94
+prefix = "10.9.129.0/24"
+
+[[app]]
+id = 85
+switch = 94
+prefix = "10.9.130.0/24"
+
+[[app]]
+id = 86
+switch = 94
+prefix = "10.9.131.0/24"
+
+[[app]]
+id = 87
+switch = 93
+prefix = "10.9.17.0/24"
+
+[[app]]
+id = 88
+switch = 93
+prefix = "10.9.18.0/24"
+
+[[app]]
+id = 89
+switch = 93
+prefix = "10.9.19.0/24"
+
+[[app]]
+id = 90
+switch = 91
+prefix = "10.9.32.0/24"
+
+[[app]]
+id = 91
+switch = 103
+prefix = "10.10.1.0/24"
+
+[[app]]
+id = 92
+switch = 103
+prefix = "10.10.2.0/24"
+
+[[app]]
+id = 93
+switch = 103
+prefix = "10.10.3.0/24"
+
+[[app]]
+id = 94
+switch = 104
+prefix = "10.10.129.0/24"
+
+[[app]]
+id = 95
+switch = 104
+prefix = "10.10.130.0/24"
+
+[[app]]
+id = 96
+switch = 104
+prefix = "10.10.131.0/24"
+
+[[app]]
+id = 97
+switch = 103
+prefix = "10.10.17.0/24"
+
+[[app]]
+id = 98
+switch = 103
+prefix = "10.10.18.0/24"
+
+[[app]]
+id = 99
+switch = 103
+prefix = "10.10.19.0/24"
+
+[[app]]
+id = 100
+switch = 101
+prefix = "10.10.32.0/24"
+
+[[app]]
+id = 101
+switch = 113
+prefix = "10.11.1.0/24"
+
+[[app]]
+id = 102
+switch = 113
+prefix = "10.11.2.0/24"
+
+[[app]]
+id = 103
+switch = 113
+prefix = "10.11.3.0/24"
+
+[[app]]
+id = 104
+switch = 114
+prefix = "10.11.129.0/24"
+
+[[app]]
+id = 105
+switch = 114
+prefix = "10.11.130.0/24"
+
+[[app]]
+id = 106
+switch = 114
+prefix = "10.11.131.0/24"
+
+[[app]]
+id = 107
+switch = 113
+prefix = "10.11.17.0/24"
+
+[[app]]
+id = 108
+switch = 113
+prefix = "10.11.18.0/24"
+
+[[app]]
+id = 109
+switch = 113
+prefix = "10.11.19.0/24"
+
+[[app]]
+id = 110
+switch = 111
+prefix = "10.11.32.0/24"
+
+[[app]]
+id = 111
+switch = 123
+prefix = "10.12.1.0/24"
+
+[[app]]
+id = 112
+switch = 123
+prefix = "10.12.2.0/24"
+
+[[app]]
+id = 113
+switch = 123
+prefix = "10.12.3.0/24"
+
+[[app]]
+id = 114
+switch = 124
+prefix = "10.12.129.0/24"
+
+[[app]]
+id = 115
+switch = 124
+prefix = "10.12.130.0/24"
+
+[[app]]
+id = 116
+switch = 124
+prefix = "10.12.131.0/24"
+
+[[app]]
+id = 117
+switch = 123
+prefix = "10.12.17.0/24"
+
+[[app]]
+id = 118
+switch = 123
+prefix = "10.12.18.0/24"
+
+[[app]]
+id = 119
+switch = 123
+prefix = "10.12.19.0/24"
+
+[[app]]
+id = 120
+switch = 121
+prefix = "10.12.32.0/24"
+
+[[app]]
+id = 121
+switch = 133
+prefix = "10.13.1.0/24"
+
+[[app]]
+id = 122
+switch = 133
+prefix = "10.13.2.0/24"
+
+[[app]]
+id = 123
+switch = 133
+prefix = "10.13.3.0/24"
+
+[[app]]
+id = 124
+switch = 134
+prefix = "10.13.129.0/24"
+
+[[app]]
+id = 125
+switch = 134
+prefix = "10.13.130.0/24"
+
+[[app]]
+id = 126
+switch = 134
+prefix = "10.13.131.0/24"
+
+[[app]]
+id = 127
+switch = 133
+prefix = "10.13.17.0/24"
+
+[[app]]
+id = 128
+switch = 133
+prefix = "10.13.18.0/24"
+
+[[app]]
+id = 129
+switch = 133
+prefix = "10.13.19.0/24"
+
+[[app]]
+id = 130
+switch = 131
+prefix = "10.13.32.0/24"
+
+[[app]]
+id = 131
+switch = 143
+prefix = "10.14.1.0/24"
+
+[[app]]
+id = 132
+switch = 143
+prefix = "10.14.2.0/24"
+
+[[app]]
+id = 133
+switch = 143
+prefix = "10.14.3.0/24"
+
+[[app]]
+id = 134
+switch = 144
+prefix = "10.14.129.0/24"
+
+[[app]]
+id = 135
+switch = 144
+prefix = "10.14.130.0/24"
+
+[[app]]
+id = 136
+switch = 144
+prefix = "10.14.131.0/24"
+
+[[app]]
+id = 137
+switch = 143
+prefix = "10.14.17.0/24"
+
+[[app]]
+id = 138
+switch = 143
+prefix = "10.14.18.0/24"
+
+[[app]]
+id = 139
+switch = 143
+prefix = "10.14.19.0/24"
+
+[[app]]
+id = 140
+switch = 141
+prefix = "10.14.32.0/24"
+
+[[app]]
+id = 141
+switch = 153
+prefix = "10.15.1.0/24"
+
+[[app]]
+id = 142
+switch = 153
+prefix = "10.15.2.0/24"
+
+[[app]]
+id = 143
+switch = 153
+prefix = "10.15.3.0/24"
+
+[[app]]
+id = 144
+switch = 154
+prefix = "10.15.129.0/24"
+
+[[app]]
+id = 145
+switch = 154
+prefix = "10.15.130.0/24"
+
+[[app]]
+id = 146
+switch = 154
+prefix = "10.15.131.0/24"
+
+[[app]]
+id = 147
+switch = 153
+prefix = "10.15.17.0/24"
+
+[[app]]
+id = 148
+switch = 153
+prefix = "10.15.18.0/24"
+
+[[app]]
+id = 149
+switch = 153
+prefix = "10.15.19.0/24"
+
+[[app]]
+id = 150
+switch = 151
+prefix = "10.15.32.0/24"
+
+[[app]]
+id = 151
+switch = 163
+prefix = "10.16.1.0/24"
+
+[[app]]
+id = 152
+switch = 163
+prefix = "10.16.2.0/24"
+
+[[app]]
+id = 153
+switch = 163
+prefix = "10.16.3.0/24"
+
+[[app]]
+id = 154
+switch = 164
+prefix = "10.16.129.0/24"
+
+[[app]]
+id = 155
+switch = 164
+prefix = "10.16.130.0/24"
+
+[[app]]
+id = 156
+switch = 164
+prefix = "10.16.131.0/24"
+
+[[app]]
+id = 157
+switch = 163
+prefix = "10.16.17.0/24"
+
+[[app]]
+id = 158
+switch = 163
+prefix = "10.16.18.0/24"
+
+[[app]]
+id = 159
+switch = 163
+prefix = "10.16.19.0/24"
+
+[[app]]
+id = 160
+switch = 161
+prefix = "10.16.32.0/24"
+
+[[app]]
+id = 161
+switch = 1000
+prefix = "10.250.1.0/24"
+
+[[app]]
+id = 162
+switch = 1000
+prefix = "10.250.2.0/24"
+
+[a4]
+tier1_as = 100
+tier1_program = "../../examples/a4_tier1/target/wasm32-unknown-unknown/release/a4_tier1.wasm"
+tier1_price = 1.5
+mb_scale = 0.1
+epoch_ms = 5000
+inject_bytes_per_s = 10000
+
+[[a4.class]]
+id = 1
+name = "Web"
+target_ms = 200
+price = 1
+contract = 200
+
+[[a4.class]]
+id = 2
+name = "Video"
+target_ms = 400
+price = 1
+contract = 600
+
+[[a4.class]]
+id = 3
+name = "Calls"
+target_ms = 80
+price = 35
+contract = 1600
+
+[[a4.class]]
+id = 4
+name = "Trading"
+target_ms = 30
+price = 0
+contract = 800
+
+[[a4.as]]
+id = 1
+sector = 0
+slot = 0
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.1.0.0/17", switch = 11 }, { prefix = "10.1.128.0/17", switch = 12 }]
+
+[[a4.as]]
+id = 2
+sector = 0
+slot = 1
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.2.0.0/17", switch = 21 }, { prefix = "10.2.128.0/17", switch = 22 }]
+
+[[a4.as]]
+id = 3
+sector = 0
+slot = 2
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.3.0.0/17", switch = 31 }, { prefix = "10.3.128.0/17", switch = 32 }]
+
+[[a4.as]]
+id = 4
+sector = 0
+slot = 3
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.4.0.0/17", switch = 41 }, { prefix = "10.4.128.0/17", switch = 42 }]
+
+[[a4.as]]
+id = 5
+sector = 1
+slot = 0
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.5.0.0/17", switch = 51 }, { prefix = "10.5.128.0/17", switch = 52 }]
+
+[[a4.as]]
+id = 6
+sector = 1
+slot = 1
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.6.0.0/17", switch = 61 }, { prefix = "10.6.128.0/17", switch = 62 }]
+
+[[a4.as]]
+id = 7
+sector = 1
+slot = 2
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.7.0.0/17", switch = 71 }, { prefix = "10.7.128.0/17", switch = 72 }]
+
+[[a4.as]]
+id = 8
+sector = 1
+slot = 3
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.8.0.0/17", switch = 81 }, { prefix = "10.8.128.0/17", switch = 82 }]
+
+[[a4.as]]
+id = 9
+sector = 2
+slot = 0
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.9.0.0/17", switch = 91 }, { prefix = "10.9.128.0/17", switch = 92 }]
+
+[[a4.as]]
+id = 10
+sector = 2
+slot = 1
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.10.0.0/17", switch = 101 }, { prefix = "10.10.128.0/17", switch = 102 }]
+
+[[a4.as]]
+id = 11
+sector = 2
+slot = 2
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.11.0.0/17", switch = 111 }, { prefix = "10.11.128.0/17", switch = 112 }]
+
+[[a4.as]]
+id = 12
+sector = 2
+slot = 3
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.12.0.0/17", switch = 121 }, { prefix = "10.12.128.0/17", switch = 122 }]
+
+[[a4.as]]
+id = 13
+sector = 3
+slot = 0
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.13.0.0/17", switch = 131 }, { prefix = "10.13.128.0/17", switch = 132 }]
+
+[[a4.as]]
+id = 14
+sector = 3
+slot = 1
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.14.0.0/17", switch = 141 }, { prefix = "10.14.128.0/17", switch = 142 }]
+
+[[a4.as]]
+id = 15
+sector = 3
+slot = 2
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.15.0.0/17", switch = 151 }, { prefix = "10.15.128.0/17", switch = 152 }]
+
+[[a4.as]]
+id = 16
+sector = 3
+slot = 3
+program = "../../examples/a4_starter/target/wasm32-unknown-unknown/release/a4_starter.wasm"
+blocks = [{ prefix = "10.16.0.0/17", switch = 161 }, { prefix = "10.16.128.0/17", switch = 162 }]
+
+[[a4.app]]
+id = 1
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 2
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 3
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 4
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 5
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 6
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 7
+class = 1
+rate_mbps = 0.600000
+to = [1, 4, 11, 14, 21, 24, 31, 34]
+role = "company"
+company = "Amazon"
+sector = 0
+
+[[a4.app]]
+id = 8
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35]
+role = "company"
+company = "Netflix"
+sector = 0
+
+[[a4.app]]
+id = 9
+class = 3
+rate_mbps = 0.150000
+to = [3, 6, 13, 16, 23, 26, 33, 36]
+role = "company"
+company = "Zoom"
+sector = 0
+
+[[a4.app]]
+id = 10
+class = 4
+rate_mbps = 0.060000
+to = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 0
+
+[[a4.app]]
+id = 11
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 12
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 13
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 14
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 15
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 16
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 17
+class = 1
+rate_mbps = 0.600000
+to = [1, 4, 11, 14, 21, 24, 31, 34]
+role = "company"
+company = "Amazon"
+sector = 0
+
+[[a4.app]]
+id = 18
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35]
+role = "company"
+company = "Netflix"
+sector = 0
+
+[[a4.app]]
+id = 19
+class = 3
+rate_mbps = 0.150000
+to = [3, 6, 13, 16, 23, 26, 33, 36]
+role = "company"
+company = "Zoom"
+sector = 0
+
+[[a4.app]]
+id = 20
+class = 4
+rate_mbps = 0.060000
+to = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 0
+
+[[a4.app]]
+id = 21
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 22
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 23
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 24
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 25
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 26
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 27
+class = 1
+rate_mbps = 0.600000
+to = [1, 4, 11, 14, 21, 24, 31, 34]
+role = "company"
+company = "Amazon"
+sector = 0
+
+[[a4.app]]
+id = 28
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35]
+role = "company"
+company = "Netflix"
+sector = 0
+
+[[a4.app]]
+id = 29
+class = 3
+rate_mbps = 0.150000
+to = [3, 6, 13, 16, 23, 26, 33, 36]
+role = "company"
+company = "Zoom"
+sector = 0
+
+[[a4.app]]
+id = 30
+class = 4
+rate_mbps = 0.060000
+to = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 0
+
+[[a4.app]]
+id = 31
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 32
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 33
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 34
+class = 1
+rate_mbps = 0.900000
+to = [41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 35
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 36
+class = 3
+rate_mbps = 0.075000
+to = [9, 19, 29, 39]
+role = "home"
+
+[[a4.app]]
+id = 37
+class = 1
+rate_mbps = 0.600000
+to = [1, 4, 11, 14, 21, 24, 31, 34]
+role = "company"
+company = "Amazon"
+sector = 0
+
+[[a4.app]]
+id = 38
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35]
+role = "company"
+company = "Netflix"
+sector = 0
+
+[[a4.app]]
+id = 39
+class = 3
+rate_mbps = 0.150000
+to = [3, 6, 13, 16, 23, 26, 33, 36]
+role = "company"
+company = "Zoom"
+sector = 0
+
+[[a4.app]]
+id = 40
+class = 4
+rate_mbps = 0.060000
+to = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 0
+
+[[a4.app]]
+id = 41
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 42
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 43
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 44
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 45
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 46
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 47
+class = 1
+rate_mbps = 0.600000
+to = [41, 44, 51, 54, 61, 64, 71, 74]
+role = "company"
+company = "Amazon"
+sector = 1
+
+[[a4.app]]
+id = 48
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75]
+role = "company"
+company = "Netflix"
+sector = 1
+
+[[a4.app]]
+id = 49
+class = 3
+rate_mbps = 0.150000
+to = [43, 46, 53, 56, 63, 66, 73, 76]
+role = "company"
+company = "Zoom"
+sector = 1
+
+[[a4.app]]
+id = 50
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 1
+
+[[a4.app]]
+id = 51
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 52
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 53
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 54
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 55
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 56
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 57
+class = 1
+rate_mbps = 0.600000
+to = [41, 44, 51, 54, 61, 64, 71, 74]
+role = "company"
+company = "Amazon"
+sector = 1
+
+[[a4.app]]
+id = 58
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75]
+role = "company"
+company = "Netflix"
+sector = 1
+
+[[a4.app]]
+id = 59
+class = 3
+rate_mbps = 0.150000
+to = [43, 46, 53, 56, 63, 66, 73, 76]
+role = "company"
+company = "Zoom"
+sector = 1
+
+[[a4.app]]
+id = 60
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 1
+
+[[a4.app]]
+id = 61
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 62
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 63
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 64
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 65
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 66
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 67
+class = 1
+rate_mbps = 0.600000
+to = [41, 44, 51, 54, 61, 64, 71, 74]
+role = "company"
+company = "Amazon"
+sector = 1
+
+[[a4.app]]
+id = 68
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75]
+role = "company"
+company = "Netflix"
+sector = 1
+
+[[a4.app]]
+id = 69
+class = 3
+rate_mbps = 0.150000
+to = [43, 46, 53, 56, 63, 66, 73, 76]
+role = "company"
+company = "Zoom"
+sector = 1
+
+[[a4.app]]
+id = 70
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 1
+
+[[a4.app]]
+id = 71
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 72
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 73
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 74
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 75
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 76
+class = 3
+rate_mbps = 0.075000
+to = [49, 59, 69, 79]
+role = "home"
+
+[[a4.app]]
+id = 77
+class = 1
+rate_mbps = 0.600000
+to = [41, 44, 51, 54, 61, 64, 71, 74]
+role = "company"
+company = "Amazon"
+sector = 1
+
+[[a4.app]]
+id = 78
+class = 2
+rate_mbps = 2.100000
+to = [42, 45, 52, 55, 62, 65, 72, 75]
+role = "company"
+company = "Netflix"
+sector = 1
+
+[[a4.app]]
+id = 79
+class = 3
+rate_mbps = 0.150000
+to = [43, 46, 53, 56, 63, 66, 73, 76]
+role = "company"
+company = "Zoom"
+sector = 1
+
+[[a4.app]]
+id = 80
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 90, 100, 110, 120, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 1
+
+[[a4.app]]
+id = 81
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 82
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 83
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 84
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 85
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 86
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 87
+class = 1
+rate_mbps = 0.600000
+to = [81, 84, 91, 94, 101, 104, 111, 114]
+role = "company"
+company = "Amazon"
+sector = 2
+
+[[a4.app]]
+id = 88
+class = 2
+rate_mbps = 2.100000
+to = [82, 85, 92, 95, 102, 105, 112, 115]
+role = "company"
+company = "Netflix"
+sector = 2
+
+[[a4.app]]
+id = 89
+class = 3
+rate_mbps = 0.150000
+to = [83, 86, 93, 96, 103, 106, 113, 116]
+role = "company"
+company = "Zoom"
+sector = 2
+
+[[a4.app]]
+id = 90
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 2
+
+[[a4.app]]
+id = 91
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 92
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 93
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 94
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 95
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 96
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 97
+class = 1
+rate_mbps = 0.600000
+to = [81, 84, 91, 94, 101, 104, 111, 114]
+role = "company"
+company = "Amazon"
+sector = 2
+
+[[a4.app]]
+id = 98
+class = 2
+rate_mbps = 2.100000
+to = [82, 85, 92, 95, 102, 105, 112, 115]
+role = "company"
+company = "Netflix"
+sector = 2
+
+[[a4.app]]
+id = 99
+class = 3
+rate_mbps = 0.150000
+to = [83, 86, 93, 96, 103, 106, 113, 116]
+role = "company"
+company = "Zoom"
+sector = 2
+
+[[a4.app]]
+id = 100
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 2
+
+[[a4.app]]
+id = 101
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 102
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 103
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 104
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 105
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 106
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 107
+class = 1
+rate_mbps = 0.600000
+to = [81, 84, 91, 94, 101, 104, 111, 114]
+role = "company"
+company = "Amazon"
+sector = 2
+
+[[a4.app]]
+id = 108
+class = 2
+rate_mbps = 2.100000
+to = [82, 85, 92, 95, 102, 105, 112, 115]
+role = "company"
+company = "Netflix"
+sector = 2
+
+[[a4.app]]
+id = 109
+class = 3
+rate_mbps = 0.150000
+to = [83, 86, 93, 96, 103, 106, 113, 116]
+role = "company"
+company = "Zoom"
+sector = 2
+
+[[a4.app]]
+id = 110
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 2
+
+[[a4.app]]
+id = 111
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 112
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 113
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 114
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154, 41, 44, 51, 54, 61, 64, 71, 74, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "home"
+
+[[a4.app]]
+id = 115
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155, 42, 45, 52, 55, 62, 65, 72, 75, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "home"
+
+[[a4.app]]
+id = 116
+class = 3
+rate_mbps = 0.075000
+to = [89, 99, 109, 119]
+role = "home"
+
+[[a4.app]]
+id = 117
+class = 1
+rate_mbps = 0.600000
+to = [81, 84, 91, 94, 101, 104, 111, 114]
+role = "company"
+company = "Amazon"
+sector = 2
+
+[[a4.app]]
+id = 118
+class = 2
+rate_mbps = 2.100000
+to = [82, 85, 92, 95, 102, 105, 112, 115]
+role = "company"
+company = "Netflix"
+sector = 2
+
+[[a4.app]]
+id = 119
+class = 3
+rate_mbps = 0.150000
+to = [83, 86, 93, 96, 103, 106, 113, 116]
+role = "company"
+company = "Zoom"
+sector = 2
+
+[[a4.app]]
+id = 120
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 130, 140, 150, 160]
+role = "company"
+company = "Jane Street"
+sector = 2
+
+[[a4.app]]
+id = 121
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 122
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 123
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 124
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 125
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 126
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 127
+class = 1
+rate_mbps = 0.600000
+to = [121, 124, 131, 134, 141, 144, 151, 154]
+role = "company"
+company = "Amazon"
+sector = 3
+
+[[a4.app]]
+id = 128
+class = 2
+rate_mbps = 2.100000
+to = [122, 125, 132, 135, 142, 145, 152, 155]
+role = "company"
+company = "Netflix"
+sector = 3
+
+[[a4.app]]
+id = 129
+class = 3
+rate_mbps = 0.150000
+to = [123, 126, 133, 136, 143, 146, 153, 156]
+role = "company"
+company = "Zoom"
+sector = 3
+
+[[a4.app]]
+id = 130
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+role = "company"
+company = "Jane Street"
+sector = 3
+
+[[a4.app]]
+id = 131
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 132
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 133
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 134
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 135
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 136
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 137
+class = 1
+rate_mbps = 0.600000
+to = [121, 124, 131, 134, 141, 144, 151, 154]
+role = "company"
+company = "Amazon"
+sector = 3
+
+[[a4.app]]
+id = 138
+class = 2
+rate_mbps = 2.100000
+to = [122, 125, 132, 135, 142, 145, 152, 155]
+role = "company"
+company = "Netflix"
+sector = 3
+
+[[a4.app]]
+id = 139
+class = 3
+rate_mbps = 0.150000
+to = [123, 126, 133, 136, 143, 146, 153, 156]
+role = "company"
+company = "Zoom"
+sector = 3
+
+[[a4.app]]
+id = 140
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+role = "company"
+company = "Jane Street"
+sector = 3
+
+[[a4.app]]
+id = 141
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 142
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 143
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 144
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 145
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 146
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 147
+class = 1
+rate_mbps = 0.600000
+to = [121, 124, 131, 134, 141, 144, 151, 154]
+role = "company"
+company = "Amazon"
+sector = 3
+
+[[a4.app]]
+id = 148
+class = 2
+rate_mbps = 2.100000
+to = [122, 125, 132, 135, 142, 145, 152, 155]
+role = "company"
+company = "Netflix"
+sector = 3
+
+[[a4.app]]
+id = 149
+class = 3
+rate_mbps = 0.150000
+to = [123, 126, 133, 136, 143, 146, 153, 156]
+role = "company"
+company = "Zoom"
+sector = 3
+
+[[a4.app]]
+id = 150
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+role = "company"
+company = "Jane Street"
+sector = 3
+
+[[a4.app]]
+id = 151
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 152
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 153
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 154
+class = 1
+rate_mbps = 0.900000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114, 1, 4, 11, 14, 21, 24, 31, 34, 81, 84, 91, 94, 101, 104, 111, 114]
+role = "home"
+
+[[a4.app]]
+id = 155
+class = 2
+rate_mbps = 2.100000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115, 2, 5, 12, 15, 22, 25, 32, 35, 82, 85, 92, 95, 102, 105, 112, 115]
+role = "home"
+
+[[a4.app]]
+id = 156
+class = 3
+rate_mbps = 0.075000
+to = [129, 139, 149, 159]
+role = "home"
+
+[[a4.app]]
+id = 157
+class = 1
+rate_mbps = 0.600000
+to = [121, 124, 131, 134, 141, 144, 151, 154]
+role = "company"
+company = "Amazon"
+sector = 3
+
+[[a4.app]]
+id = 158
+class = 2
+rate_mbps = 2.100000
+to = [122, 125, 132, 135, 142, 145, 152, 155]
+role = "company"
+company = "Netflix"
+sector = 3
+
+[[a4.app]]
+id = 159
+class = 3
+rate_mbps = 0.150000
+to = [123, 126, 133, 136, 143, 146, 153, 156]
+role = "company"
+company = "Zoom"
+sector = 3
+
+[[a4.app]]
+id = 160
+class = 4
+rate_mbps = 0.060000
+to = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+role = "company"
+company = "Jane Street"
+sector = 3
+
+[[a4.app]]
+id = 161
+class = 1
+rate_mbps = 14.400000
+to = [1, 4, 11, 14, 21, 24, 31, 34, 41, 44, 51, 54, 61, 64, 71, 74, 81, 84, 91, 94, 101, 104, 111, 114, 121, 124, 131, 134, 141, 144, 151, 154]
+role = "external"
+
+[[a4.app]]
+id = 162
+class = 2
+rate_mbps = 33.600000
+to = [2, 5, 12, 15, 22, 25, 32, 35, 42, 45, 52, 55, 62, 65, 72, 75, 82, 85, 92, 95, 102, 105, 112, 115, 122, 125, 132, 135, 142, 145, 152, 155]
+role = "external"
